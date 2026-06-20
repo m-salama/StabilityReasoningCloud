@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdaptationRules>
+<!--  	<Rule id="R01">
+		<description>if response time is violated, increase the capabilities of VMs (vertical scaling)</description>
+		<QualityAttribute>ResponseTime</QualityAttribute>
+		<AdaptationTactic>VERTICAL_SCALING_CAP</AdaptationTactic>
+		<priority>1</priority>
+	</Rule>  -->
+
+	<Rule id="R02">
+		<description>if response time is violated, increase the number of VMs (vertical scaling)</description>
+		<QualityAttribute>ResponseTime</QualityAttribute>
+		<AdaptationTactic>VERTICAL_SCALING_NUM</AdaptationTactic>
+		<priority>2</priority>
+	</Rule>
+
+	<Rule id="R03">
+		<description>if response time is violated, increase the number of PMs (horizontal scaling)</description>
+		<QualityAttribute>ResponseTime</QualityAttribute>
+		<AdaptationTactic>HORIZONTAL_SCALING</AdaptationTactic>
+		<priority>3</priority>
+	</Rule> 
+
+	<!-- <Rule id="R04">
+		<description>if throughput is violated, increase the capabilities of VMs (vertical scaling)</description>
+		<QualityAttribute>Throughput</QualityAttribute>
+		<AdaptationTactic>VERTICAL_SCALING_CAP</AdaptationTactic>
+		<priority>1</priority>
+	</Rule> 
+
+	 <Rule id="R05">
+		<description>if throughput is violated, increasing the number of VMs (vertical scaling)</description>
+		<QualityAttribute>Throughput</QualityAttribute>
+		<AdaptationTactic>VERTICAL_SCALING_NUM</AdaptationTactic>
+		<priority>2</priority>
+	</Rule> 
+
+	<Rule id="R06">
+		<description>if throughput is violated, increasing the number of PMs (horizontal scaling)</description>
+		<QualityAttribute>Throughput</QualityAttribute>
+		<AdaptationTactic>HORIZONTALL_SCALING</AdaptationTactic>
+		<priority>3</priority>
+	</Rule> -->
+
+<!--	<Rule id="R07">
+		<description>if energy consumption is violated, migrate VMs and shut down unused PMs (VM consolidation)</description>
+		<QualityAttribute>EnergyConsumption</QualityAttribute>
+		<AdaptationTactic>VM_CONSOLIDATION</AdaptationTactic>
+		<priority>1</priority>
+	</Rule> -->
+
+	<Rule id="R08">
+		<description>if energy consumption is violated, decrease the number of VMs (vertical de-scaling)</description>
+		<QualityAttribute>EnergyConsumption</QualityAttribute>
+		<AdaptationTactic>VERTICAL_DESCALING_NUM</AdaptationTactic>
+		<priority>2</priority>
+	</Rule>
+
+	<Rule id="R09">
+		<description>if energy consumption is violated, decrease the number of PMs (horizontal de-scaling)</description>
+		<QualityAttribute>EnergyConsumption</QualityAttribute>
+		<AdaptationTactic>HORIZONTALL_DESCALING</AdaptationTactic>
+		<priority>3</priority>
+	</Rule>
+
+	<Rule id="R10">
+		<description>if operational cost is violated, decrease the number of VMs (vertical de-scaling)</description>
+		<QualityAttribute>OperationalCost</QualityAttribute>
+		<AdaptationTactic>VERTICAL_DESCALING_NUM</AdaptationTactic>
+		<priority>1</priority>
+	</Rule>
+
+	<Rule id="R11">
+		<description>if operational cost is violated, decrease the number of PMs (horizontal de-scaling)</description>
+		<QualityAttribute>OperationalCost</QualityAttribute>
+		<AdaptationTactic>HORIZONTALL_DESCALING</AdaptationTactic>
+		<priority>2</priority>
+	</Rule> 
+	
+</AdaptationRules>

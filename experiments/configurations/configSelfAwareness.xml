@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SelfAwareness>
+	<Component id="c1">
+		<name>Stimulus-awareness</name>
+		<className>StimulusAwareness</className>
+		<isActive>true</isActive>
+	</Component>
+	<Component id="c2">
+		<name>Goal-awareness</name>
+		<className>GoalAwareness</className>
+		<isActive>true</isActive>
+	</Component>
+	<Component id="c3">
+		<name>Time-awareness</name>
+		<className>TimeAwareness</className>
+		<isActive>false</isActive>
+	</Component>
+	<Component id="c4">
+		<name>Interaction-awareness</name>
+		<className>InteractionAwareness</className>
+		<isActive>false</isActive>
+	</Component>
+	<Component id="c5">
+		<name>Meta-self-awareness</name>
+		<className>MetaSelfAwareness</className>
+		<isActive>false</isActive>
+	</Component>
+
+</SelfAwareness>

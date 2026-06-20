@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdaptationTactics>
+	<Tactic id="T01">
+		<description>vertical scaling (increasing the capabilities of VMs)</description>
+		<Object>VM_Types</Object>
+		<change>increase</change>
+		<min>2</min>
+		<max></max>
+		<tag>VERTICAL_SCALING_CAP</tag>
+	</Tactic>
+
+	<Tactic id="T02">
+		<description>vertical scaling (increasing the number of VMs)</description>
+		<Object>VM</Object>
+		<change>increase</change>
+		<min>2</min>
+		<max></max>
+		<tag>VERTICAL_SCALING_NUM</tag>
+	</Tactic>
+
+	<Tactic id="T03">
+		<description>vertical de-scaling (decreasing the number of VMs)</description>
+		<Object>VM</Object>
+		<change>decrease</change>
+		<min>2</min>
+		<max></max>
+		<tag>VERTICAL_DESCALING_NUM</tag>
+	</Tactic>
+
+	<Tactic id="T04">
+		<description>horizontal scaling (increasing the number of PMs)</description>
+		<Object>PM</Object>
+		<change>increase</change>
+		<min>2</min>
+		<max></max>
+		<tag>HORIZONTAL_SCALING</tag>
+	</Tactic>
+
+	<Tactic id="T05">
+		<description>horizontal de-scaling (decreasing the number of PMs)</description>
+		<Object>PM</Object>
+		<change>decrease</change>
+		<min>2</min>
+		<max></max>
+		<tag>HORIZONTAL_DESCALING</tag>
+	</Tactic>
+
+	<Tactic id="T06">
+		<description>VM consolidation (migrating VMs and shut down unused PMs)</description>
+		<Object>PM</Object>
+		<change>decrease</change>
+		<min>2</min>
+		<max></max>
+		<tag>VM_CONSOLIDATION</tag>
+	</Tactic>
+
+</AdaptationTactics>

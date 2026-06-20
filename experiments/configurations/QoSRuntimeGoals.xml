@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QoSGoals>
+	<QualityAttribute id="QA01">
+		<name>ResponseTime</name>
+		<constraintValue>25</constraintValue>
+		<metric>ms</metric>
+		<isMin>true</isMin>
+		<weight>1.0</weight>
+		<threshold>20</threshold>
+	</QualityAttribute>
+
+	<!-- <QualityAttribute id="QA02">
+		<name>Throughput</name>
+		<constraintValue>2</constraintValue>
+		<metric>req/sec</metric>
+		<isMin>false</isMin>
+		<weight>0.5</weight>
+	</QualityAttribute> -->
+
+	<QualityAttribute id="QA03">
+		<name>EnergyConsumption</name>
+		<constraintValue>25</constraintValue>
+		<metric>kWh</metric>
+		<isMin>true</isMin>
+		<weight>1.0</weight>
+		<threshold>15</threshold>
+	</QualityAttribute>
+
+	<QualityAttribute id="QA04">
+		<name>OperationalCost</name>
+		<constraintValue>50</constraintValue>
+		<metric>$</metric>
+		<isMin>true</isMin>
+		<weight>1.0</weight>
+		<threshold>10</threshold>
+	</QualityAttribute>
+
+</QoSGoals>
